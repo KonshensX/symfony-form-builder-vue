@@ -1,0 +1,12 @@
+A post can belong to whatever area we want , let's think about this for a second 
+
+Imma have a Country -> City -> Streets 
+
+
+A Post belongs to a Street
+A Street belongs to a City
+A City belongs to a Country
+
+
+A post belongs to a sub_category
+A sub_category belongs to a Category
