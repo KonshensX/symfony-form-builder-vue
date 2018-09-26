@@ -1,1 +1,0 @@
-fos.Router.setData({"base_url":"","routes":{"form_getter":{"tokens":[["text","\/form"]],"defaults":[],"requirements":[],"hosttokens":[],"methods":[],"schemes":[]}},"prefix":"","host":"localhost","scheme":"http"});

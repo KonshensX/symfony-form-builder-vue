@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h2 class="text-center">Hello world!</h2>
-		
+
 		<div v-html="formContent">
 			{{ formContent }}
 		</div>
