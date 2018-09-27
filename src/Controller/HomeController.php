@@ -118,9 +118,15 @@ class HomeController extends Controller
             'action' => $this->generateUrl('form_getter'),
             'method' => 'POST'
         ])
-            ->add('title')
-            ->add('description')
-            ->add('author')
+            ->add('title', null, [
+                'required' => false
+            ])
+            ->add('description', null, [
+                'required' => false
+            ])
+            ->add('author', null, [
+                'required' => false
+            ])
             ->add('save', SubmitType::class, [
                 'attr' => [
                     'class' => 'btn btn-success'

@@ -1,33 +1,34 @@
 <template>
 	<div>
 		<h2 class="text-center">Hello world!</h2>
-		{{ formContent }}
+
+		<form action="#" v-bind:onsubmit="handleForm">
+			<input type="text" v-model="name" placeholder="Your name!">
+
+			<button type="submit">Send</button>
+		</form>
 	</div>
 </template>
 
 <script>
-	import axios from 'axios'
-	let Routing = require('../../vendor/friendsofsymfony/jsrouting-bundle/Resources/public/js/router')
-	let Routes = require('./js_routes.json')
-
-	Routing.setRoutingData(Routes)
 
 	export default {
 		data: function ()
 		{
 			return {
-				formContent: ""
+				name: "Med BAZA"
 			}
 		},
 		created: function ()
 		{
-			// make a request to the form url
-			// XXX: 
-			// need to get dump the url in the controller and get here 
-			axios.get()
 
-			// set the response to the formContent
-			// 
+		},
+		methods: {
+		    handleForm: function (event)
+			{
+			    event.preventDefault()
+				console.log(event)
+			}
 		}
 	}
 </script>
